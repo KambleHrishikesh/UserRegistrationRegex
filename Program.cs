@@ -6,12 +6,12 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Regex User Registration");
+            Console.WriteLine("Enter last name");
             string inStr = Console.ReadLine();
 
-            string firstName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
+            string lastName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
 
-            Regex regex = new Regex(firstName);
+            Regex regex = new Regex(lastName);
             Console.WriteLine(regex.IsMatch(inStr));
         }
     }
